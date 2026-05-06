@@ -1,0 +1,11 @@
+{
+  "triggers": [
+    {
+      "id": "QH-885Z2:received",
+      "title": {
+        "en": "Button is pressed",
+        "nl": "Knop is ingedrukt"
+      }
+    }
+  ]
+}

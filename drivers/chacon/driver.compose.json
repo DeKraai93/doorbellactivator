@@ -1,0 +1,32 @@
+{
+  "name": {
+    "en": "Chacon"
+  },
+  "class": "remote",
+  "capabilities": [],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "rf433"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  },
+  "pair": [
+    {
+      "id": "rf_transmitter_learn",
+      "options": {
+        "title": {
+          "en": "Press the button",
+          "nl": "Druk op de knop"
+        },
+        "instruction": {
+          "en": "Press the button on your device.",
+          "nl": "Druk op de knop op het apparaat"
+        }
+      }
+    }
+  ]
+}
