@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "compatibility": ">=12.4.0",
   "sdk": 3,
+  "platforms": [
+    "local"
+  ],
   "name": {
     "en": "Doorbell Activator"
   },
   "description": {
-    "en": "makes doorbell signals activate flows within homey"
+    "en": "makes chacon doorbell signals activate flows within homey"
   },
   "category": [
     "security"
@@ -15,12 +18,15 @@
   "permissions": [
     "homey:wireless:433"
   ],
+  "brandColor": "#064515",
   "images": {
     "small": "/assets/images/small.png",
-    "large": "/assets/images/large.png",
-    "xlarge": "/assets/images/xlarge.png"
+    "large": "/assets/images/large.png"
   },
   "author": {
     "name": "H. Wolters"
+  },
+  "icons": {
+  "192": "assets/icon.svg"
   }
 }

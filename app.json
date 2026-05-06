@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "compatibility": ">=12.4.0",
   "sdk": 3,
-  "runtime": "nodejs",
   "platforms": [
     "local"
   ],
@@ -12,19 +11,115 @@
     "en": "Doorbell Activator"
   },
   "description": {
-    "en": "makes doorbell signals activate flows within homey"
+    "en": "makes chacon doorbell signals activate flows within homey"
   },
   "category": [
     "security"
   ],
-  "permissions": [],
+  "permissions": [
+    "homey:wireless:433"
+  ],
+  "brandColor": "#064515",
   "images": {
     "small": "/assets/images/small.png",
-    "large": "/assets/images/large.png",
-    "xlarge": "/assets/images/xlarge.png"
+    "large": "/assets/images/large.png"
   },
   "author": {
-    "name": "H. Wolters",
-    "email": "harmpi@live.nl"
+    "name": "H. Wolters"
+  },
+  "icons": {
+    "192": "assets/icon.svg"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "QH-885Z2:received",
+        "title": {
+          "en": "Button is pressed",
+          "nl": "Knop is ingedrukt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=chacon-qh-885z2"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Chacon"
+      },
+      "class": "remote",
+      "capabilities": [],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "rf433"
+      ],
+      "images": {
+        "small": "/drivers/chacon-qh-885z2/assets/images/small.png",
+        "large": "/drivers/chacon-qh-885z2/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "rf_transmitter_learn",
+          "options": {
+            "title": {
+              "en": "Press the button",
+              "nl": "Druk op de knop"
+            },
+            "instruction": {
+              "en": "Press the button on your device.",
+              "nl": "Druk op de knop op het apparaat"
+            }
+          }
+        }
+      ],
+      "id": "chacon-qh-885z2"
+    }
+  ],
+  "signals": {
+    "433": {
+      "chacon-qh-885z2": {
+        "sof": [
+          95
+        ],
+        "eof": [
+          125
+        ],
+        "words": [
+          [
+            260,
+            90
+          ],
+          [
+            110,
+            45
+          ],
+          [
+            145,
+            145
+          ],
+          [
+            675,
+            55
+          ],
+          [
+            490,
+            60
+          ]
+        ],
+        "interval": 10000,
+        "sensitivity": 0.5,
+        "repetitions": 20,
+        "minimalLength": 32,
+        "maximalLength": 32
+      }
+    }
   }
 }
