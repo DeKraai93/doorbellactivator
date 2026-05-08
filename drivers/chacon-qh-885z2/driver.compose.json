@@ -3,7 +3,7 @@
     "en": "Chacon"
   },
   "class": "remote",
-  "capabilities": [],
+  "capabilities": ["alarm_generic"],
   "platforms": [
     "local"
   ],

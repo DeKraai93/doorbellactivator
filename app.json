@@ -19,7 +19,7 @@
   "permissions": [
     "homey:wireless:433"
   ],
-  "brandColor": "#064515",
+  "brandColor": "#e92621",
   "images": {
     "small": "/assets/images/small.png",
     "large": "/assets/images/large.png"
@@ -27,6 +27,7 @@
   "author": {
     "name": "H. Wolters"
   },
+  "support": "https://github.com/DeKraai93/doorbellactivator/issues",
   "icons": {
     "192": "assets/icon.svg"
   },
@@ -54,7 +55,9 @@
         "en": "Chacon"
       },
       "class": "remote",
-      "capabilities": [],
+      "capabilities": [
+        "alarm_generic"
+      ],
       "platforms": [
         "local"
       ],
