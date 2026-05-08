@@ -1,6 +1,6 @@
 {
   "id": "com.wolters.doorbellactivator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "platforms": [
@@ -27,6 +27,6 @@
     "name": "H. Wolters"
   },
   "icons": {
-  "192": "assets/icon.svg"
+    "192": "assets/icon.svg"
   }
 }
