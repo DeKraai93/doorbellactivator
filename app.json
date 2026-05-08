@@ -90,7 +90,7 @@
           95
         ],
         "eof": [
-          125
+          135
         ],
         "words": [
           [
@@ -116,9 +116,9 @@
         ],
         "interval": 10000,
         "sensitivity": 0.5,
-        "repetitions": 20,
-        "minimalLength": 32,
-        "maximalLength": 32
+        "repetitions": 3,
+        "minimalLength": 28,
+        "maximalLength": 40
       }
     }
   }
