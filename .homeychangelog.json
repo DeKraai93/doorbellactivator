@@ -4,5 +4,8 @@
   },
   "1.0.1": {
     "en": "changed brand color"
+  },
+  "1.0.2": {
+    "en": "added alarm_generic capabillity"
   }
 }
